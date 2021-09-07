@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+/* MAIN CONTAINER ===== START */
+
+#main-container {
+  max-width: 710px;
+  max-height: 275px;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(0, 100%);
+  border-radius: 10px;
+  box-shadow: rgba(129, 129, 141, 0.2) 0px 20px 60px 0px;
+}
+
+/* MAIN IMAGE */
+
+#image {
+  width: 600px;
+  height: 275px;
+  opacity: 90%;
+  background-image: url("/images/drawers.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* TEXT SECTION */
+#text-content {
+  width: 85%;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: auto;
+}
+
+/* MAIN HEADING  */
+
+.heading {
+  color: hsl(217, 19%, 35%);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.main-paragraph {
+  color: hsl(214, 17%, 51%);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* AVATAR SECTION */
+
+.written-by {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.avatar-img {
+  margin-left: -10px;
+  border-radius: 50%;
+  width: 40px;
+}
+.name {
+  margin-left: -82px;
+}
+
+h2 {
+  color: hsl(217, 19%, 35%);
+  font-size: 0.8rem;
+  padding-bottom: 5px;
+}
+
+.date {
+  font-size: 13px;
+  color: hsl(212, 23%, 69%);
+}
+
+/* POP UP ON SHARE BUTTON */
+/* HIDDEN SECTION */
+
+h3 {
+  color: hsl(212, 23%, 69%);
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding-right: 15px;
+  font-weight: 500;
+}
+
+.active-state {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 76.2%;
+  margin-right: -30px;
+  margin-left: auto;
+  margin-bottom: -10px;
+  padding: 10px 170px 0 25px;
+  gap: 2px;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 8px;
+  width: 220px;
+  height: 50px;
+}
+
+/* ICON SECTION */
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding-top: 5px;
+  margin-left: 12px;
+}
+
+.icons:after {
+  content: "";
+  position: relative;
+  left: 100%;
+  top: 14px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid hsl(217, 19%, 35%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.icons img {
+  padding-right: 10px;
+}
+
+.btn-share-active {
+  position: absolute;
+}
+
+/* Share Button */
+.button-share img {
+  margin-left: 100px;
+}
+
+/* HIDDEN CLASS */
+.hidden {
+  display: none;
+}
+
+/* FOOTER */
+.attribution {
+  position: absolute;
+  top: 76%;
+  left: 40%;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA 375px */
+
+@media screen and (max-width: 375px) {
+  /* MAIN */
+  #main-container {
+    max-width: 350px;
+    min-height: 530px;
+    background-color: #fff;
+    display: block;
+    transform: translate(0, 25%);
+  }
+
+  /* MAIN IMAGE */
+  #image {
+    width: 350px;
+    max-height: 220px;
+    opacity: 90%;
+    background-image: url("/images/drawers.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  /* TEXT CONTENT */
+  #text-content {
+    width: 81%;
+    margin-top: 35px;
+    margin-left: 30px;
+    margin-right: auto;
+  }
+
+  /* MAIN HEADING */
+  .heading {
+    color: hsl(217, 19%, 35%);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  /* AVATAR DIV */
+  .written-by {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 22px;
+  }
+
+  .avatar-img {
+    margin-left: 10px;
+  }
+
+  .name {
+    width: 120px;
+    margin-left: -50px;
+  }
+
+  .button-share img {
+    margin-left: 20px;
+  }
+
+  /* ACTIVE STATE - ON CLICK */
+
+  h3 {
+    font-size: 14px;
+    letter-spacing: 5px;
+  }
+
+  .active-state {
+    top: 87%;
+    left: 0%;
+    border-radius: 0px 0px 8px 8px;
+    width: 350px;
+    height: 70px;
+  }
+
+  .icons {
+    padding-top: 14px;
+    margin-left: 12px;
+  }
+
+  .icons:after {
+    top: 0;
+  }
+
+  .btn-share-active {
+    margin-top: 12px;
+  }
+}
