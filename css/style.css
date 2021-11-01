@@ -157,9 +157,8 @@ h3 {
 
 /* FOOTER */
 .attribution {
-  position: absolute;
-  top: 63%;
-  left: 42%;
+  position: relative;
+  top: 220px;
   font-size: 11px;
   text-align: center;
 }
@@ -216,7 +215,7 @@ h3 {
   }
 
   .attribution {
-    top: 70%;
+    top: 300px;
   }
 }
 
@@ -315,7 +314,6 @@ h3 {
   }
 
   .attribution {
-    top: 85%;
-    left: 10%;
+    top: 155px;
   }
 }
