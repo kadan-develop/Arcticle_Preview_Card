@@ -95,7 +95,7 @@ h3 {
   letter-spacing: 2px;
   padding-right: 15px;
   font-weight: 500;
-  cursor: po;
+  cursor: pointer;
 }
 
 .active-state {
@@ -221,7 +221,7 @@ h3 {
 
 /* MEDIA 375px */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 725px) {
   /* MAIN */
   #main-container {
     max-width: 350px;
@@ -290,6 +290,7 @@ h3 {
   h3 {
     font-size: 14px;
     letter-spacing: 5px;
+    cursor: pointer;
   }
 
   .active-state {
